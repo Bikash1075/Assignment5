@@ -22,11 +22,14 @@ class SavingsAccount(Account):
     def interestAmount(self):
         return (self.balance*self.interestRate)//100
 Ad=Account("Asish",2000)
-print(Ad.deposit(500))
+Ad.deposit(500)
+Ad.getBalance()
+print(Ad.getBalance())
 
 Aw=Account("Asish",2000)
-print(Aw.withdrawal(500))
-
+Aw.withdrawal(500)
+Aw.getBalance()
+print(Aw.getBalance())
 
 Si=SavingsAccount("Asish",2000,5)
 print(Si.interestAmount())
