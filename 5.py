@@ -34,7 +34,7 @@ print(Aw.getBalance())
 
 Si=SavingsAccount("Asish",2000,5)
 print(Si.interestAmount())
-print("---------------------------------------------")
+
 
 # 2nd approach
 class Account:
