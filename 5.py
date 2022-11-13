@@ -1,4 +1,5 @@
-# 
+# Challenge 5
+# handling bank account
 class Account:
     def __init__(self, title, balance):
         self.title = title
@@ -20,7 +21,21 @@ class SavingsAccount(Account):
             self.interestRate = interestRate
     
     def interestAmount(self):
-        return (self.balance*self.interestRate)//100
+        return (self.balance*self.interestRate)/100
+Ad=SavingsAccount("Asish",2000)
+Ad.deposit(500)
+Ad.getBalance()
+print(Ad.getBalance())
+
+Aw=SavingsAccount("Asish",2000)
+Aw.withdrawal(500)
+Aw.getBalance()
+print(Aw.getBalance())
+
+Si=SavingsAccount("Asish",2000,5)
+print(Si.interestAmount())
+print("---------------------------------------------")
+
 Ad=Account("Asish",2000)
 Ad.deposit(500)
 Ad.getBalance()
