@@ -13,6 +13,8 @@ class Point:
 a=Point(1,3,5)
 print(a.SqSum())
 print("---------------------------------------------")
+
+
 # Challenge 2
 # Calculator
 class Calculator():
@@ -53,6 +55,7 @@ s.setRollNumber(75)
 print(s.getRollNumber())
 print("---------------------------------------------")
 
+
 # Challenge 4
 # Parent and child class
 class Account:
@@ -70,6 +73,7 @@ A=Account("Asish", 5000)
 SA=SavingsAccount("Asish", 5000, 5)
 print(f"Here, {SA.title} is the title, {SA.balance} is the balance and {SA.InterestRate} is the interestRate.")
 print("---------------------------------------------")
+
 
 # Challenge 5
 # handling bank account
