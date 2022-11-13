@@ -56,7 +56,6 @@ print(s.getRollNumber())
 print("---------------------------------------------")
 
 
-# Challenge 4
 # Parent and child class
 class Account:
     def __init__(self,title=None,balance=0):
@@ -70,8 +69,16 @@ class SavingsAccount(Account):
         self.balance=balance
         self.InterestRate=InterestRate
 A=Account("Asish", 5000)
+print(f"Name of the Account Holder is {A.title}")
+print(f"Available Balance is {A.balance} Rs")
+print(f"Here, {A.title} is the title, {A.balance} is the balance . ")
 SA=SavingsAccount("Asish", 5000, 5)
-print(f"Here, {SA.title} is the title, {SA.balance} is the balance and {SA.InterestRate} is the interestRate.")
+print("--------------------------------------------------------------")
+print(f"Name of the Account Holder is {SA.title}")
+print(f"Available Balance is {SA.balance} Rs")
+print(f"Name of the Account Holder is {A.title}")
+print(f"Interest Rate on Current Balance in percent is {SA.InterestRate}")
+print(f"Here, {SA.title} is the title, {SA.balance} is the balance and {SA.InterestRate} is the interestRate .")
 print("---------------------------------------------")
 
 
